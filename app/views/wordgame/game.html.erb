@@ -1,0 +1,11 @@
+<h1>Wordgame</h1>
+
+<h3> <%= @generategrid %> </h3>
+
+<form action="/score">
+  <label for="question">Enter your word with the characters!</label>
+  <input type="text" name="answer" placeholder="what's your guess?">
+  <input type="submit" value="Go on!">
+  <input type="hidden" name="start_time" value="<%= @start_time %>" >
+  <input type="hidden" name="generategrid" value="<%= @generategrid %>" >
+</form>
